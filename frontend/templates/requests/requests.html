@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../../styles/requests/requests.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/pop-ups/popUp.css">
 </head>
 <body>
 
@@ -24,6 +25,23 @@
 
     <div id="pending-actions" class="actions-container"></div>
 
+    <button class="button open-button">Proceed to Payment</button>
+
+    <dialog class="modal" id="modal">
+     <h2>Enter Card Details</h2>
+      <form class="form" method="dialog">
+        <label>Name of Card Holder: <input type="text" placeholder="Name"></label><br>
+        <label>Card Number: <input type="number" placeholder="XXXX XXXX XXXX XXXX"></label><br>
+        <label>Exp Date: <input type="number" placeholder="MM"> / <input type="number" placeholder="YYYY"></label><br>
+        <label>CVV: <input type="number"> Postal Code: <input type="number" placeholder="XXXXX"></label><br>
+        <label>Email Address:<input type="email" id="email" placeholder="ex: jdoe@gmail.com" /></label><br>
+        <button id="submit-button">Submit</button>
+       </form>
+    <div id="error-message" style="color: red;"></div>
+
+    <script src="../../scripts/pop-ups/popUp.js"></script>
     <script src="../../scripts/requests/requests.js"></script>
+    </dialog>
+
 </body>
 </html>

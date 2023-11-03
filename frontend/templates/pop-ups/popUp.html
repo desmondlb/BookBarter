@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="../../styles/search/popUp.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/pop-ups/popUp.css">
 </head>
 <body>
 
+    <button onclick="document.addEventListener" id="Card"></button>
     <button class="button open-button">Request Book</button>
 
     <dialog class="modal" id="modal">
-      <h1>Book Title</h1>
-      <button class="button close-button">Cancel</button>
+      <h1 class="card-title">Book Title</h1>
       <form class="form" method="dialog">
-        <label>Your name <input type="text"></label>
-        <label>Your email <input type="email"></label>
+        <label>Your name: <input type="text" placeholder="name"></label><br>
+        <label>Your email: <input type="email" placeholder="email"></label><br>
         <button class="button" type="submit">Submit Exchange Request</button>
+        <button class="button close-button">Cancel</button>
       </form>
-    
 
-    <script src="../../scripts/search/popUp.js"></script>
+    <script src="../../scripts/pop-ups/popUp.js"></script>
 
     </dialog>
 </body>
